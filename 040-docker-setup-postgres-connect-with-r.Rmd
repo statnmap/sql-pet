@@ -54,7 +54,7 @@ sp_docker_remove_container("sql-pet")
 
 We name containers `cattle` for "throw-aways" and `pet` for ones we treasure and keep around.  :-)
 
-> The `sp_docker_remove_container` function from the `sqlpetr` package creates a container and runs the PostgreSQL 10 image (`docker.io/postgres:10`) in it. The image will be downloaded if it doesn't exist locally.
+> The `sp_make_simple_pg` function from the `sqlpetr` package creates a container and runs the PostgreSQL 10 image (`docker.io/postgres:10`) in it. The image will be downloaded if it doesn't exist locally.
 
 ```{r setup cattle Docker container, eval=TRUE, echo=TRUE}
 sp_make_simple_pg("cattle")
